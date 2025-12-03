@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard – University Token</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<header class="app-header">
+    <h1>Admin Dashboard</h1>
+    <p class="subtitle">Assign tokens to students and track balances</p>
+</header>
+
+<nav class="top-nav">
+    <a href="index.html">&larr; Back</a>
+    <span>Role: Admin</span>
+</nav>
+
+<main class="container">
+    <section class="card">
+        <h2>Student Token List</h2>
+        <p class="hint">
+            Prototype: click <strong>+10</strong> or <strong>+50</strong> to simulate assigning tokens.
+        </p>
+
+        <table class="data-table" id="student-table">
+            <thead>
+            <tr>
+                <th>Student</th>
+                <th>ID</th>
+                <th>Balance (Tokens)</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Filled by JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <section class="card">
+        <h2>Recent Admin Actions (Prototype)</h2>
+        <ul id="admin-log" class="log-list">
+            <!-- Filled by JavaScript -->
+        </ul>
+    </section>
+</main>
+
+<footer class="app-footer">
+    &copy; 2025 University Token Prototype – Admin View
+</footer>
+</body>
+</html>
